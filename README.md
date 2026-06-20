@@ -1,5 +1,5 @@
 # Hardened Network Infrastructure: Internal, Router & External Security Deployment
-### *Engineered a hardened MikroTik-based network infrastructure through a layered security architecture spanning Internal,Router, & External. Internal security controls included 802.1X RADIUS authentication, VLAN segmentation, DHCP Snooping, and MACsec to secure endpoint and Layer 2 communications. Router security was reinforced through port knocking, management plane restrictions, custom administrative access controls, and encrypted DNS resolution using DNS over HTTPS (DoH). External security was implemented using a stateful default deny firewall with dynamic port-scan and brute-force detection, Bogon filtering, reconnaissance controls, and multi-vector SYN, UDP, and ICMP flood mitigation to protect against perimeter threats.*
+### *Engineered a hardened MikroTik-based network infrastructure through a layered security architecture spanning Internal, Router, & External. Internal security controls included 802.1X RADIUS authentication, VLAN segmentation, DHCP Snooping, and MACsec to secure endpoint and Layer 2 communications. Router security was reinforced through port knocking, management plane restrictions, custom administrative access controls, and encrypted DNS resolution using DNS over HTTPS (DoH). External security was implemented using a stateful default deny firewall with dynamic port-scan and brute-force detection, Bogon filtering, reconnaissance controls, and multi-vector SYN, UDP, and ICMP flood mitigation to protect against perimeter threats.*
 
 > My Fifth and last project as an unemployed.
 
@@ -15,7 +15,7 @@
 
 ---
 
-## 🎭 The Lore
+## The Lore
 
 Okay so here's the scenario:
 
@@ -201,7 +201,7 @@ Blocked everything else. Additionally, limited traceroute by rate-limiting time-
 
 ---
 
-## 📊 Security Layer Summary
+## Security Layer Summary
 
 | Layer | Protections Deployed | Primary Threat Mitigated |
 |-------|---------------------|--------------------------|
@@ -211,7 +211,7 @@ Blocked everything else. Additionally, limited traceroute by rate-limiting time-
 
 ---
 
-## 🚧 Challenges I Faced
+## Challenges I Faced
 
 **Port Knocking and State Table Exhaustion**
 
