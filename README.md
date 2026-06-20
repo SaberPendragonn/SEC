@@ -1,13 +1,11 @@
-# 🛡️ Hardened Network Infrastructure: Internal, Router & External Security Deployment
-### *My Tenth Project as a Network Engineer*
+# Hardened Network Infrastructure: Internal, Router & External Security Deployment
+### *Engineered a hardened MikroTik-based network infrastructure through a layered security architecture spanning Internal,Router, & External. Internal security controls included 802.1X RADIUS authentication, VLAN segmentation, DHCP Snooping, and MACsec to secure endpoint and Layer 2 communications. Router security was reinforced through port knocking, management plane restrictions, custom administrative access controls, and encrypted DNS resolution using DNS over HTTPS (DoH). External security was implemented using a stateful default deny firewall with dynamic port-scan and brute-force detection, Bogon filtering, reconnaissance controls, and multi-vector SYN, UDP, and ICMP flood mitigation to protect against perimeter threats.*
 
-> Security isn't a product. It's a layered architecture.
+> My Fifth and last project as an unemployed.
 
 ---
 
-## 🗺️ The Topology
-
-![Network Topology](https://YOUR-IMAGE-HOST.com/topology.png)
+## The Structure
 
 **Internal Layer (Switching Plane):** 802.1X RADIUS authentication + MACsec encryption + DHCP Snooping + VLAN isolation
 
@@ -35,11 +33,9 @@ So for this project, I didn't just add a firewall and call it done. I went **lay
 - **Router (Management Plane):** Who can admin the router? How do they get in? What services are exposed?
 - **External (Edge Firewall):** What traffic enters from the internet? What gets dropped? What gets blocked?
 
-Three layers. One goal: **default deny, explicit allow, zero trust.**
-
 ---
 
-## 🛠️ Internal Security (The Switching Plane)
+## Internal Security (The Switching Plane)
 
 This layer controls who can plug into the network and what they can reach.
 
@@ -87,7 +83,7 @@ This layer controls who can plug into the network and what they can reach.
 
 ---
 
-## 🛠️ Router Security (The Management Plane)
+## Router Security (The Management Plane)
 
 This layer controls who can administer the router and how they get in.
 
@@ -135,7 +131,7 @@ This layer controls who can administer the router and how they get in.
 
 ---
 
-## 🛠️ External Security (The Edge Firewall)
+## External Security (The Edge Firewall)
 
 This layer controls what traffic enters from the internet.
 
@@ -237,7 +233,7 @@ Enabling DoH broke local DNS resolution for internal devices. The router was sen
 
 ---
 
-## 💡 Final Thoughts
+## Final Thoughts
 
 Security isn't one thing. It's a stack.
 
@@ -256,16 +252,6 @@ I measured this by simulating attacks at every layer:
 
 Each attack hit a wall. Each layer did its job.
 
-**Why This Matters to an Employer:**
-
-Most engineers set up a firewall and call it secure. I don't.
-
-I secure the switch ports. I encrypt the trunk links. I hide management interfaces. I rate-limit floods. I filter bogon traffic. I block port scans. I prevent brute force.
-
-I build networks that are **hardened by default, not patched after the breach**.
-
-That's the difference between "security" and "defense in depth."
-
 ---
 
-*Tenth project down. More to come.* 🔥
+*Last project for now.*
